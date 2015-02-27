@@ -1,0 +1,60 @@
+body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+  color:white;
+}
+
+.full {
+  background: url(../img/stock.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20px;
+    text-align:center;
+    font-size: 80px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    text-shadow: 0 1px 20px rgba(0,0,0,0.4);
+    line-height: 1.1;
+}
+
+.intro-message h3{
+  font-weight:100;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#copyright {
+  color:#9d9d9d;
+  float:right;
+  margin-top:15px;
+}
+
+#Box1{
+  color:black;
+  font-weight:300;
+}
+
+#result{
+  text-align:center;
+  font-weight:100;
+  font-size:22px;
+  color:white;
+  text-align:center;
+}
+
+.ketchup-error {
+  display:none;
+}
