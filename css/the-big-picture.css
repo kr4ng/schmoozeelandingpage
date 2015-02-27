@@ -18,7 +18,7 @@ body {
     padding-top: 20%;
     padding-bottom: 20px;
     text-align:center;
-    font-size: 80px;
+    font-size: 100px;
     color: white;
     -webkit-font-smoothing: antialiased;
     font-weight: 100;
@@ -27,7 +27,7 @@ body {
 }
 
 .intro-message h3{
-  font-weight:100;
+  font-weight:200;
 }
 
 .intro-divider {
