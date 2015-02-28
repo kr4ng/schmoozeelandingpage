@@ -1,12 +1,12 @@
 <?php
-$apiKey = '';
-$listId = '';
+$apiKey = 'c7856fa1a1cff101b58b12a4532087b1-us10';
+$listId = '0d83b46362';
 $double_optin=false;
 $send_welcome=false;
 $email_type = 'html';
 $email = $_POST['email'];
 //replace us2 with your actual datacenter
-$submit_url = "";
+$submit_url = "http://us10.api.mailchimp.com/1.3/?method=listSubscribe";
 $data = array(
     'email_address'=>$email,
     'apikey'=>$apiKey,
@@ -27,7 +27,7 @@ $result = curl_exec($ch);
 curl_close ($ch);
 $data = json_decode($result);
 if ($data->error){
-    echo "Hey Hey, not so fast my friend.";
+    echo "Something went wrong. Please try again.";
 } else {
-    echo "Sweet. You'll be onboarding shortly.";
+    echo "You've been added to the list.";
 }

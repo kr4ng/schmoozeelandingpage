@@ -46,7 +46,7 @@
             <div class="col-lg-12">
                 <div class="intro-message">
                     <p>Schmoozee</p>
-                    <h3>Helping sales schmooze better close more deals.</h3>
+                    <h3>Close more deals.</h3>
                     <hr class="intro-divider">
                  <fieldset>
                     <div class="form-group">
@@ -54,7 +54,7 @@
                        <div class="col-sm-4">
                        <form action="/subscribe.php" id="invite" method="POST">
                           <div class="input-group">
-                             <input type="text" class="form-control" id="Box1" placeholder='wanna schmooze?' data-validate="validate(required, email)" />
+                             <input type="text" class="form-control" id="Box1" placeholder='Enter your Email.' data-validate="validate(required, email)" />
                              <span class="input-group-btn">
                                 <button type="submit" class="btn btn-default">Go!</button>
                              </span>
@@ -98,9 +98,11 @@
                     },
                     success: function(data){
                         $('#result').html(data).css('color', 'white');
+                        $('#Box1').val("");
                     },
                     error: function() {
                         $('#result').html('Sorry, an error occurred.').css('color', 'white');
+                        $('#Box1').val("");
                     }
                 });
             }
